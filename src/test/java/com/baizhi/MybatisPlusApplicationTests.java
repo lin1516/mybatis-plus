@@ -51,5 +51,7 @@ class MybatisPlusApplicationTests {
 
     //  spotDao.selectPage(,new QueryWrapper<Spot>());
         System.out.println();
+        
+        System.out.println("-------------test-git-------------");
     }
 }
