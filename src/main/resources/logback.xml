@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!--定义日记输出位置-->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!--项目中日记输出格式-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%p] %d{yyyy-MM-dd HH:mm:ss} [%c] %m %n</pattern>
+        </layout>
+    </appender>
+    <!--项目根日记-->
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+    <!--指定包日记控制-->
+    <logger name="com.baizhi.dao" level="debug"/>
+</configuration>
